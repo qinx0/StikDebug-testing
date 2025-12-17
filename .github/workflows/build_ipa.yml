@@ -51,7 +51,6 @@ jobs:
           rm -rf Payload StikDebug.app
 
       - name: Upload Debug IPA (artifact)
-        if: env.UPLOAD_IPA == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: StikDebug-Debug.ipa
